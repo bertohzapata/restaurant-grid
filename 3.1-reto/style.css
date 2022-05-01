@@ -1,0 +1,45 @@
+:root {
+    --space-dark: #1E1926;
+    --space-gray: #9A89B4;
+    --space-blue: #1111ff;
+    --space-white: #FCF8FF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    gap: 15px;
+    place-content: center;
+    height: 100%;
+    grid-template-columns: repeat(3, 75px);
+    grid-template-rows: repeat(3, 75px);
+    background-color: var(--space-dark);
+}
+
+.item {
+    border-radius: 5px;
+    color: var(--space-white);
+    font-size: 4rem;
+    text-align: end;
+}
+.item-1, .item-4, .item-5{
+    background: greenyellow;
+}
+
+.item-2, .item-3{
+    grid-column: span 2;
+}
+.item-2, .item-6{
+background: limegreen;
+}
+
+.item-3, .item-7{
+    background: green;
+}

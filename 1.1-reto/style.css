@@ -1,0 +1,30 @@
+:root {
+    --space-dark:     #1E1926;
+    --space-gray: #9A89B4;
+    --space-blue: #1111ff;
+    --space-white: #FCF8FF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3,100px);
+    grid-template-columns: repeat(2,100px);
+    gap: 20px;
+    grid-auto-flow: column;
+    background-color: var(--space-dark);
+}
+
+.item {
+    background: var(--space-blue);
+    border: 2px solid var(--space-gray);
+    border-radius: 5px;
+    color: var(--space-white);
+    font-size: 4rem;
+    text-align: right;
+}

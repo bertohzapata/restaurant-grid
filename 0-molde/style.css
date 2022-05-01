@@ -1,0 +1,32 @@
+:root {
+    --space-dark:     #1E1926;
+    --space-gray: #9A89B4;
+    --space-blue: #1111ff;
+    --space-white: #FCF8FF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    gap: 15px;
+    place-content: center;
+    height: 100%;
+    grid-template-columns: 300px 300px;
+    background-color: var(--space-dark);
+}
+
+.item {
+    background: var(--space-blue);
+    border: 2px solid var(--space-gray);
+    border-radius: 5px;
+    color: var(--space-white);
+    font-size: 4rem;
+    text-align: end;
+}

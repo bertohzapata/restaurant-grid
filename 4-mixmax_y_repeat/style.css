@@ -1,0 +1,50 @@
+/* Funciones especiales
+
+minmax: permite declarar el tamaño minimo y máximo
+de las filas o columnas. De esta forma permitir el
+crecimiento limitado de la celda.
+
+repeat : se usa cuando todas las columnas o 
+filas tienen el mismo tamaño. El primer valor recibe
+la cantidad de celdas y el segundo el tamaño
+ - auto: para que crezca automaticamente
+ - minmax(): para darle un crecimiento limitado
+ - %,px,etc: para limitar el tamaño sin crecer
+*/
+
+
+:root {
+    --space-dark:     #E1B467;
+    --space-gray: #50B67A;
+    --space-blue: #17B1E3;
+    --space-white: #E5D6C4;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    gap: 15px;
+    place-content: center;
+    height: 100%;
+    /* grid-template-columns: 30px 200px 60px; No cabe el texto de algunas celdas, se rompe */
+    grid-template-columns: minmax(30px, 300px) 200px minmax(60px, 250px);
+    /* grid-template-rows: 100px 100px 100px; Al ajustar la pantalla se mantiene y lo queremos flexible */
+    grid-template-rows: repeat(3, auto);
+    background-color: var(--space-dark);
+}
+
+.item {
+    background: var(--space-blue);
+    border: 2px solid var(--space-gray);
+    border-radius: 5px;
+    color: var(--space-white);
+    font-size: 2rem;
+    text-align: center;
+}

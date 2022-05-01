@@ -1,0 +1,94 @@
+.container {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns: 100px 200px 300px;  /* CUANTAS columnas va a tener y de que ANCHO va a ser CADA UNA */
+    /* grid-template-rows: 150px; Indicamos los mismo valores para filas */
+    grid-auto-rows: 150px; /* Cuando queremos que todas las filas que se crean en automático tengan el mismo tamaño */
+    /* grid-auto-columns: -; También existe el mismo caso en columnas automáticas*/
+    grid-auto-flow: column; /* Indica el flujo en el eque los items se van a posicionar en la grilla por defecto está en row */
+    row-gap: 15px; /* Espacio entre filas */
+    column-gap: 15px; /* Espacio entre columnas */
+    /* gap: 15px; Espacio entre filas y columnas */
+}
+
+.item {
+    border: 5px solid #00bc;
+    font-size: 4rem;
+}
+
+/* 
+**Propiedades del contenedor grid: **
+*Display: Grid
+*Grid-template
+*Gaps
+*Grid-auto
+
+Para comenzar a usar grillas es necesario colocar en CSS al
+
+contenedor padre:
+display: grid;
+
+grid-template-colums: indica cuantas columnas va a tener y
+
+de que ancho va a ser cada columna
+grid-template-rows: indica cuantas filas va a tener y de que
+
+altura va a ser cada fila
+
+Ejemplo, para crear 3 columnas (cada uno de diferentes
+
+tamaño):
+grid-template-colums: 100px 200px 300px;
+Nota: Si en tu contenedor hay 4 o más items, grid-template-
+
+columns te creará automáticamente 1 nueva fila y comenzará a
+
+llenarla, y pondrá cada fila en 3 columnas
+
+Además, también podemos colocar ambos tipos de grid-template
+Ejemplo:
+grid-template-columns: 100px 200px 300px;
+grid-template-rows: 150px 250px;
+
+Otra forma de colocar los tamaños de las filas y columnas, sería
+
+usar grid-auto
+Esta propiedad define el tamaño de cualquier fila o columna que
+
+se crea.
+Existe grid-auto-rows; grid-auto-columns; **grid-auto-
+
+flow**
+
+Ejemplo:
+grid-auto-rows: 150px;
+*Esto hara que todas tus filas siempre tenga una altura de
+
+150px.
+
+grid-auto-flow: Modifica cómo se está llenando nuestra grilla.
+
+Por defecto está el row, ya que cuando los elementos no caben
+
+en lo que hemos definido, lo que hace es crear mas filas nuevas
+
+grid-auto-flow: dense; : Si hay un espacio vacío en la grilla, lo
+
+que va a hacer es poner los elementos allí, en vez de seguir
+
+poniéndolos en filas y columnas
+grid-auto-flow: column; :Crea nuevas columnas, en vez de
+
+nuevas filas
+
+Para definir espacios entre filas y/o columnas
+row-gap: crea un espacio solo entre filas (no se crea un
+
+espacio entre una fila y el borde de su contenedor)
+column-gap: se crea un espacio solo entre sus columnas
+gap: una combinación entre row-gap y column-gap (crea un
+
+espacio entre filas y entre columnas con el mismo tamaño puesto
+
+en CSS) */

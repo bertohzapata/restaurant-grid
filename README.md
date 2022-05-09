@@ -13,7 +13,7 @@ Incluye los siguientes temas:
 ## Proyecto terminado
 
 ### Desktop
-<div style="text-align:center"><img style="width: 100%;" src="./assets/img/Grid_project.png"></div>
+<div style="text-align:center"><img style="width: 70%;" src="./assets/img/Grid_project.png"></div>
 
 ### Mobile
-<div style="text-align:center"><img style="width: 100%;" src="./assets/img/Grid_project_mobile.png"></div>
+<div style="text-align:center"><img style="width: 70%;" src="./assets/img/Grid_project_mobile.png"></div>
